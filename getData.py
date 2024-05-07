@@ -30,6 +30,6 @@ while tNow < t2:
         S.resample(250)
         print('Saving')
         for tr in S:
-            filename = 'data/{}_{}.mseed'.format(tr.id, tr.starttime.strftime('%Y%m%d%H%M%S'))
+            filename = 'data\{}_{}.mseed'.format(tr.id, tr.stats.starttime.strftime('%Y%m%d%H%M%S'))
             tr.write(filename)
     tNow = tNow + delta
