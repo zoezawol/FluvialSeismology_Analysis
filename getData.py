@@ -30,6 +30,6 @@ while tNow < t2:
         S.resample(250)
         print('Saving')
         for tr in S:
-            filename = 'data\{}_{}.mseed'.format(tr.id, tr.stats.starttime.strftime('%Y%m%d%H%M%S'))
+            filename = 'C:/Users/tkeny/Documents/ResearchData/FluvialSeismology/{}_{}.mseed'.format(tr.id, tr.stats.starttime.strftime('%Y%m%d%H%M%S')) #saves to my own local directory, define something specific
             tr.write(filename)
     tNow = tNow + delta
