@@ -1,7 +1,7 @@
 #%%
 import waveformUtils
 import obspy
-S = obspy.read('data/ZE.2301*')
+S = obspy.read('PATH/ZE.2301*')
 
 f, spectraF, spectraG, sttimes, tvec, RSAM = waveformUtils.plotSpectraTime(S, minfreq=1, maxfreq=100, winlength=7200,
                                                                            step=7200,
